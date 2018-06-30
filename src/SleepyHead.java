@@ -1,8 +1,3 @@
-
-//yes = 0, no = 1
-//    Copyright (c) The League of Amazing Programmers 2013-2017
-//    Level 0
-
 import javax.swing.JOptionPane;
 
 public class SleepyHead {
@@ -20,7 +15,8 @@ public class SleepyHead {
 		 */
 
 		int day = JOptionPane.showConfirmDialog(null, "Is it a weekday?", "Sleepy Head", JOptionPane.YES_NO_OPTION);
-		int vacation = JOptionPane.showConfirmDialog(null, "Are you on vacation?", "Sleepy Head", JOptionPane.YES_NO_OPTION);
+		int vacation = JOptionPane.showConfirmDialog(null, "Are you on vacation?", "Sleepy Head",
+				JOptionPane.YES_NO_OPTION);
 		System.out.println(day);
 
 		/*
@@ -29,15 +25,13 @@ public class SleepyHead {
 		 * in”.
 		 */
 
-		if (day == 0) {
+		if (day == 1) {
 			isWeekday = false;
 			JOptionPane.showMessageDialog(null, "Get up lazybones!");
 		} else {
 			isWeekday = true;
 			JOptionPane.showMessageDialog(null, "Sleep in.");
 		}
-
-
 
 	}
 }

@@ -1,22 +1,23 @@
 import javax.swing.JOptionPane;
 
 public class SimpleCalculator {
-	
+
 	static double calc1 = 0;
 	static double calc2 = 0;
-	
+
 	public static void main(String[] args) {
 
 		// 1. Get 2 numbers from the user and convert them to integer.
+
+		String n1 = JOptionPane.showInputDialog("Pick a random number (Less than 1,000,000)");
+		calc1 = Double.parseDouble(n1);
+
+		String n2 = JOptionPane.showInputDialog("Pick another number (Lower than the first one)");
+		calc2 = Double.parseDouble(n2);
+
+		// 2. Customize pop-up to support add/subtract/multiply/divide operations.
 		for (int i = 0; i < 4; i++) {
 
-			String n1 = JOptionPane.showInputDialog("Pick a random  number 6-10");
-			calc1 = Double.parseDouble(n1);
-
-			String n2 = JOptionPane.showInputDialog("Pick another number that is from 1-5");
-			calc2 = Double.parseDouble(n2);
-
-			// 2. Customize pop-up to support add/subtract/multiply/divide operations.
 			int operation = JOptionPane.showOptionDialog(null, "Click these buttons to use your numbers in equations.",
 					"Simple Calculator", 0, JOptionPane.INFORMATION_MESSAGE, null,
 					new String[] { "Divide", "Multiply", "Subtract", "Add" }, null);
