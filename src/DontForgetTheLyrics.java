@@ -24,15 +24,12 @@ public class DontForgetTheLyrics {
 
 		JOptionPane.showMessageDialog(null, "This is how the game works: I will play a"
 				+ "song, and you will try to remember the lyrics to the song."
-				+ "Then, I will ask you what the lyrics were, and if you enter"
-				+ " the correct words, you win.");
+				+ "Then, I will ask you what the lyrics were, and if you enter" + " the correct words, you win.");
 		// 5. Use the playSound method to play your song.
-
-		playSound();
 
 		// 6. Make a pop-up for the player to type their answer.
 
-		String song = JOptionPane.showInputDialog("Type your answer here.");
+		String song = JOptionPane.showInputDialog("Type your answer below.");
 
 		// 7. If they answered correctly, tell them that they were right.
 

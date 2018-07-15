@@ -33,8 +33,8 @@ public class ChangeCalculator {
 
 		// Calculate how much money the user has and save it in a double variable
 
-		double total = ((nickel1*.05) + (dime1*.1) + (quarter1*.25));
-		
+		double total = ((nickel1 * .05) + (dime1 * .1) + (quarter1 * .25));
+
 		// Tell the user how much money they have
 
 		JOptionPane.showMessageDialog(null, "You have $" + total + " in total.");
