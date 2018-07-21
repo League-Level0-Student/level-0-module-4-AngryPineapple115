@@ -5,6 +5,8 @@
 import java.io.IOException;
 import java.util.Scanner;
 
+import javax.swing.JOptionPane;
+
 public class PiAloud {
 
 	// 1. Make a main method and make sure your program can run
@@ -12,14 +14,26 @@ public class PiAloud {
 
 		// 2. Make a String variable to hold the value of Pi. You could use
 		// http://www.piday.org/million/ for the value.
-		double number = 3.1415926535;
-		int pi = Integer.parseInt(number);
+
+		String pi = "3.14159265";
+
 		// 3. Print out some digits of Pi. The first value is "pi.charAt(0)", the second
 		// is "pi.charAt(1)"
 
+		System.out.println(pi.charAt(0));
+		System.out.println(pi.charAt(1));
+		System.out.println(pi.charAt(2));
+		System.out.println(pi.charAt(3));
+
 		// 4. Print ALL the digits of of Pi (hint: use a loop)
 
+		for (int a = 0; a < args.length; a++) {
+			System.out.println(pi.charAt(a));
+		}
 		// 5. Use the speak() method to speak all the digits of Pi.
+		for (int b = 0; b < 10; b++) {
+			speak(pi.charAt(b));
+		}
 
 		// [ADVANCED]
 		// *6. Get a character from the user using the getInputFromUser() method
