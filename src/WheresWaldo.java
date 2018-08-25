@@ -44,3 +44,18 @@ public class WheresWaldo {
 //		AudioSample woohoo;
 	
 }
+//PImage donkey;
+//PImage tail;
+//
+//void setup() {
+//
+//  size(770,405);
+//  donkey = loadImage("donkey.jpg");
+//  tail = loadImage("tail.png");
+//}
+//void draw() {
+//  
+//  background(donkey);
+//  image(tail, mouseX, mouseY);
+//  
+//}
